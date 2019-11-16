@@ -1,14 +1,9 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+
+import Routes from 'routes';
 
 const App = () => {
-    return (
-        <View
-            style={{ alignItems: 'center', justifyContent: 'center', flex: 1 }}
-        >
-            <Text>Gobarber</Text>
-        </View>
-    );
+    return <Routes />;
 };
 
 export default App;
