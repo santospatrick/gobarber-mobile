@@ -602,7 +602,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EuMesma.app/EuMesma";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoBarber.app/GoBarber";
 			};
 			name = Debug;
 		};
@@ -623,7 +623,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EuMesma.app/EuMesma";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoBarber.app/GoBarber";
 			};
 			name = Release;
 		};
@@ -642,7 +642,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.santospatrick.GoBarber;
 				PRODUCT_NAME = GoBarber;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -662,7 +662,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.santospatrick.GoBarber;
 				PRODUCT_NAME = GoBarber;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
