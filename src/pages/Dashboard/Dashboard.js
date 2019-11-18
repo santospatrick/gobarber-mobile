@@ -18,6 +18,17 @@ const Dashboard = () => {
         loadAppointments();
     }, []);
 
+    async function handleCancel(id) {
+        const response = await api.delete(`appointments/${id}`);
+        setAppointments(
+            appointments.map(item =>
+                item.id === id
+                    ? { ...item, canceled_at: response.data.canceled_at }
+                    : item,
+            ),
+        );
+    }
+
     return (
         <Background>
             <Container>
@@ -25,7 +36,12 @@ const Dashboard = () => {
                 <List
                     data={appointments}
                     keyExtractor={item => String(item.id)}
-                    renderItem={({ item }) => <Appointment data={item} />}
+                    renderItem={({ item }) => (
+                        <Appointment
+                            onCancel={() => handleCancel(item.id)}
+                            data={item}
+                        />
+                    )}
                 />
             </Container>
         </Background>
