@@ -4,6 +4,7 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import Background from 'components/Background';
 
 import { updateProfileRequest } from 'store/modules/user/actions';
+import { signOut } from 'store/modules/auth/actions';
 import {
     Container,
     Title,
@@ -11,6 +12,7 @@ import {
     Form,
     FormInput,
     SubmitButton,
+    LogoutButton,
 } from './styles';
 
 const Profile = () => {
@@ -44,6 +46,10 @@ const Profile = () => {
                 confirmPassword,
             }),
         );
+    }
+
+    function handleLogout() {
+        dispatch(signOut());
     }
 
     return (
@@ -116,6 +122,9 @@ const Profile = () => {
                     <SubmitButton onPress={handleSubmit}>
                         Atualizar perfil
                     </SubmitButton>
+                    <LogoutButton onPress={handleLogout}>
+                        Sair do GoBarber
+                    </LogoutButton>
                 </Form>
             </Container>
         </Background>
