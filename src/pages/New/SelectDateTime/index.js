@@ -1,12 +1,12 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import Background from 'components/Background';
 
 const SelectDateTime = () => {
-    return (
-        <View>
-            <Text>SelectDateTime</Text>
-        </View>
-    );
+    return <Background />;
+};
+
+SelectDateTime.navigationOptions = {
+    title: 'Selecione o horário',
 };
 
 export default SelectDateTime;
